@@ -1,0 +1,49 @@
+package meujogo.Modelo;
+
+import java.awt.Image;
+import java.awt.event.KeyEvent;
+
+import javax.swing.ImageIcon;
+
+public class Player {
+	private int x,y;
+	private int dX, dY;
+	private Image imagem;
+	private int altura,largura;
+	
+	public Player() {
+		this.x = 100;
+		this.y = 100;
+		
+	}
+
+	public void Load() {
+		ImageIcon referencia = new ImageIcon("res\\nave1.png");
+		imagem = referencia.getImage();
+		altura = imagem.getHeight(null);
+		largura = imagem.getWidth(null);
+	}
+	
+	public void Update() {
+		x += dX;
+		y += dY;
+	}
+	
+	public void KeyPressed(KeyEvent tecla) {
+		int codigo =  tecla.getKeyCode();
+		
+		if(codigo == KeyEvent.VK_UP) {
+			dY = 3;
+		}
+		if(codigo == KeyEvent.VK_DOWN) {
+			dY = 3;
+		}
+		if(codigo == KeyEvent.VK_LEFT) {
+			dY = 3;
+		}
+		if(codigo == KeyEvent.VK_UP) {
+			dY = 3;
+		}
+	}
+	
+}

@@ -1,0 +1,14 @@
+package meujogo.Modelo;
+
+import java.awt.Image;
+
+public class Bomb {
+	
+	private Image image;
+	private int x,y;
+	private int largura,altura;
+	private boolean isVisivel;
+	
+	private static final int LARGURA = 600;
+
+}

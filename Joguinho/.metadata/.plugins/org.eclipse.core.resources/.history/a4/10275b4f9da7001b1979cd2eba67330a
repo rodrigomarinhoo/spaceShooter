@@ -1,0 +1,11 @@
+package meujogo.Modelo;
+
+import java.awt.Image;
+
+public class Player {
+	private int x,y;
+	private int dX, dY;
+	private Image image;
+	private int altura,largura;
+
+}

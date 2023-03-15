@@ -1,0 +1,27 @@
+package meujogo.Modelo;
+
+import java.awt.Image;
+
+import javax.swing.ImageIcon;
+
+public class Bomb {
+	
+	private Image imagem;
+	private int x,y;
+	private int largura,altura;
+	private boolean isVisivel;
+	
+	private static final int LARGURA = 600;
+	private static int VELOCIDADE = 2;
+	
+	public Bomb(int x, int y) {
+		this.x = x;
+		this.y = y;
+		isVisivel = true;
+	}
+	
+	public void load(){
+		ImageIcon referencia = new ImageIcon();
+		imagem = referencia.getImage();
+	}
+}
